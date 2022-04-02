@@ -28,7 +28,9 @@ export class Navbar extends Component {
     render() {
         
         return (
-        <header className="header-wraper transparent-menu">
+        <header className="header-wraper transparent-menu" style={{
+            backgroundColor:"#1B3555 transparent"
+        }}>
             <div className="main-menu">
                 <div className="container">
                     <div className="row">
