@@ -5,7 +5,7 @@ class SectionTitle extends Component {
         var {Title, Titlep} = this.props;
         return (
             <div className="row">
-                <div className="col-lg-8 col-md-10 col-12 offset-lg-2 offset-md-1">
+                <div className="col-lg-8 col-md-10 col-12 offset-md-1" style={{margin: "auto"}}>
                     <div className="section-title text-center">
                         <span />
                         <h2>{Title}</h2>
