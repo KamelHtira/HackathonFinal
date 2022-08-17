@@ -65,6 +65,7 @@ class ContactOne extends Component {
                                 </div>
                                 <div className="contact-info">
                                     <p>commercial@ideal-connect.tn</p>
+                                    <p>Espace de tunis block H</p>
                                 </div>
                             </div> {/* /.single-contact-info */}
                             <div className="single-contact-info col-sm-6 col-12">

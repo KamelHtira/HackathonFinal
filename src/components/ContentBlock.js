@@ -1,14 +1,30 @@
-import React, { Component } from 'react'
+import React, { Component  } from 'react'
 import SectionTitle from './SectionTitle'
 
 
 class ContentBlock extends Component {
+    constructor() {
+        super();
+        this.style = {display: "none"};
+      }
+      setDisplay()
+      {
+        if (this.style === {display: "block"}) {
+            console.log("works")
+            this.style=  {display: "none"};
+            
+            
+        }
+        else
+        {this.style=  {display: "block"}
+        console.log("works2")};
+      }
     render() {
         return (
             <section className="content-block-wrap section-padding pb-130" id="services">
                 <div className="container">
                     
-                <SectionTitle Title="Nos Services"  Titlep="IDEAL CONNECT fournit de nombreuses solutions informatiques complètes et innovantes. Nos experts travaillent en collaboration avec nos clients pour leur offrir, de manière efficace, des solutions sur-mesure qui répondent à chacun de leurs besoins. Prenez rendez-vous avec l'un de nos consultants pour découvrir comment nous pouvons vous aider." />  
+                <SectionTitle Title="Nos services"  Titlep="IDEAL CONNECT fournit de nombreuses solutions informatiques complètes et innovantes. Nos experts travaillent en collaboration avec nos clients pour leur offrir, de manière efficace, des solutions sur-mesure qui répondent à chacun de leurs besoins. Prenez rendez-vous avec l'un de nos consultants pour découvrir comment nous pouvons vous aider." />  
                     <div className="row">
                         <div className="col-xl-5 col-lg-6  col-sm-12 col-12">
                             <div className="content-block" data-aos="fade-right" data-aos-duration={1200}>
@@ -34,8 +50,9 @@ class ContentBlock extends Component {
                             <div className="content-block pt-60" data-aos="fade-left" data-aos-duration={1200}>
                                 <span className="top-title">CÂBLAGE STRUCTURÉ</span>
                                 <h2>LE NERF DE L’INFORMATIQUE</h2>
-                                <p>Que ce soit pour l’organisation d’une salle de serveur/télécommunication complète, l’interconnexion verticale/ horizontale ou même le raccordement des composants utilisateurs, notre équipe hautement qualifiée en câblage structuré saura répondre à vos besoins.</p>
-                                <a href=".#" className="theme-btn">Savoir Plus</a>
+                                <p>Que ce soit pour l’organisation d’une salle de serveur / télécommunication complète, l’interconnexion verticale/ horizontale ou même le raccordement des composants utilisateurs, notre équipe hautement qualifiée en câblage structuré saura répondre à vos besoins.</p>
+                                <p style={this.style}>Que ce soit pour l’organisation d’une salle de serveur / télécommunication complète, l’interconnexion verticale/ horizontale ou même.</p>
+                                <a onClick={this.setDisplay()} className="theme-btn">Savoir Plus</a>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 col-sm-12 col-12">
@@ -84,21 +101,6 @@ class ContentBlock extends Component {
                         <div className="col-lg-6 col-xl-6  offset-xl-1 col-sm-12 col-12">
                             <div className="content-featured-img pt-60" data-aos="fade-up" data-aos-duration={1200}>
                                 <img src={require ("../assets/img/featured-img3.jpg") } alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row flex-row-reverse">
-                        <div className="col-xl-5 col-lg-6 offset-xl-1 col-sm-12 col-12">
-                            <div className="content-block pt-60" data-aos="fade-left" data-aos-duration={1200}>
-                                <span className="top-title">POINTAGE, CONTROLE D'ACCEES ET SECURITE ELECTRONIQUE</span>
-                                <h2>Garantire votre <br />sécurité</h2>
-                                <p>Intégrateur de systèmes de sécurité électronique et prestataire de services, la société IDEAL CONNECT propose à ses clients des solutions globales de sécurité, de télésurveillance, vidéo protection. forte de l’expérience de son équipe multidisciplinaire ,IDEAL CONNECT assure la conception, l’installation et l’exploitation des solutions de protection contre l’intrusion .</p>
-                                <p>Ces solutions mettent en œuvre des systèmes de contrôle d’accès, de vidéosurveillance et de télésurveillance pour la protection des sites sensibles (Défense, des sites industriels, des banques, des entreprises, des administrations mais aussi des patrimoine privé).</p>
-                            </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 col-sm-12 col-12">
-                            <div className="content-featured-img pt-60" data-aos="fade-right" data-aos-duration={1200}>
-                                <img src={require ("../assets/img/featured-img4.jpg") } alt="" />
                             </div>
                         </div>
                     </div>

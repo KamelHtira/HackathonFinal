@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import HeroOne from './Hero/HeroOne';
 import ServiceOne from './Services/ServiceOne';
 import ContentBlock from './ContentBlock';
+import SolutionBlock from './SolutionBlock';
 import FaqOne from './Faq/FaqOne';
 import ContactOne from './Contact/ContactOne';
 import ServiceData from './Services/ServiceData';
@@ -16,8 +17,9 @@ const HomeOne = () => {
     return ( 
     <React.Fragment>
         <HeroOne />
-        <ServiceOne ServiceData={ServiceData} />
+        <ServiceOne ServiceData={ ServiceData } />
         <ContentBlock/>
+        <SolutionBlock/>
         <Testimonial TestimonialData={TestimonialData} />
         <FaqOne FaqData={FaqData} />
         <ContactOne/>

@@ -34,7 +34,7 @@ export class Navbar extends Component {
                     <div className="row">
                         <div className="col-md-3 col-lg-2 d-flex col-6 col-sm-4">
                             <PageLink className="navbar-brand logo" to="/">
-                                <img src={logo} alt="Klaud" style={{paddingTop:" 10px"}}/>
+                                <img src={logo} alt="Klaud"/>
                             </PageLink>
                         </div>
                         <div className="col-xl-7 col-lg-7 offset-xl-1 col-md-7 col-7 pr-0 d-none d-lg-block text-lg-right">
